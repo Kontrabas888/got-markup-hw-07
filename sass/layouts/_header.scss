@@ -1,0 +1,119 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+.navigation__logo {
+  font-family: "Raleway", "sans-serif";
+    @include font (700, 26px, 1.19, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  color: var(--main-btn-color);
+  margin-right: 93px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__logo > span {
+  color: #000000;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 30px;
+}
+
+.navigatiion__conntact {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.navigation__link {
+    @include font (500, 14px, 1.15, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.15;
+  // letter-spacing: 0.02em;
+  color: var(--discription-topic-color);
+  padding-bottom: 31px;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}
+
+.current {
+  color: var(--main-btn-color);
+  position: relative;
+  &::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--main-btn-color);
+}
+}
+
+.navigation__mail__konvert {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation__mail {
+      @include font (500, 14px, 1.15, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.15;
+  // letter-spacing: 0.02em;
+  color: var(--discription-subtopic-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}
+
+.navigation__icon__phon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation__tel {
+      @include font (500, 14px, 1.15, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.15;
+  // letter-spacing: 0.02em;
+  color: var(--discription-subtopic-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}

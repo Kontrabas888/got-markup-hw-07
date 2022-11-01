@@ -1,0 +1,228 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-box {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+    @include font (700, 26px, 1.19, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  color: var(--main-btn-color);
+}
+
+.footer-logos {
+  font-family: "Raleway", sans-serif;
+    @include font (700, 26px, 1.19, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  color: var(--som-white-color);
+}
+
+.footer-maps {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--som-white-color);
+  margin-top: 20px;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}
+
+.footer-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}
+
+.footer-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  transition: color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+}
+}
+
+.footer-iteam {
+  margin-bottom: 9px;
+}
+
+.footer-container-soc {
+  margin-left: 70px;
+  align-items: baseline;
+  margin-top: 15px;
+}
+
+.footer-soc {
+    @include font (700, 14px, 0.86, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 0.86;
+  // letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--som-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-list-soc {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--som-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms linear, background-color 250ms linear;
+  &:hover,
+  &:focus {
+  background-color: #2196f3;
+  color: var(--som-white-color);
+}
+}
+
+.footer-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.footer-container-subscribe {
+  margin-left: 93px;
+}
+
+.online-text-top {
+  font-family: "Roboto";
+  font-style: normal;
+    @include font (700, 14px, 1.15, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.15;
+  // letter-spacing: 0.03em;
+  // text-transform: uppercase;
+  color: var(--som-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+}
+
+.modal-commet {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.online-email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 120px 15px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--som-white-color);
+  background-color: transparent;
+  margin-right: 12px;
+  &::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border-color: var(--main-btn-color);
+}
+}
+
+.subscribe-btn {
+  font-family: "Roboto";
+  font-style: normal;
+    @include font (700, 16px, 1.88, 0.06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+}
+
+.footer-subscribe-icon {
+  padding-left: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.subscribe-btn {
+  padding: 10px 32px 10px 28px;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  background-color: var(--main-btn-color);
+  transition: background-color 250ms linear;
+}

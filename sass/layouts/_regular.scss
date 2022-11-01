@@ -1,0 +1,46 @@
+.regular__client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular__text {
+  font-family: "Roboto";
+  font-style: normal;
+      @include font (700, 36px, 1.16, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 42px;
+  // letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--discription-topic-color);
+  padding-bottom: 50px;
+}
+
+.regular__list {
+  display: flex;
+  gap: 30px;
+}
+
+.regular-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.regular-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: color 250ms linear, border-color 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+  color: var(--main-btn-color);
+  border-color: var(--main-btn-color);
+}
+}
